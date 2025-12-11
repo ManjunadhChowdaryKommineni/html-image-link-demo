@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>html-image-link-demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+    }
+    header h1 {
+      margin: 0 0 12px 0;
+      font-size: 32px;
+    }
+    .center {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .logo {
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>html-image-link-demo</h1>
+    <p>A minimal demo: clickable image that links to the Gitam login page.</p>
+  </header>
+
+  <main>
+    <div class="center">
+      <!-- Use a relative path for the image (logo.jpg placed in same folder or in /assets/) -->
+      <a href="https://login.gitam.edu/" title="Go to Gitam login" target="_blank" rel="noopener noreferrer">
+        <img src="assets/logo.jpg" alt="Hamster logo" class="logo" width="200" height="200">
+      </a>
+
+      <div>
+        <p>Click the image to open the Gitam login page in a new tab.</p>
+        <p><strong>Note:</strong> image file must be in the repo under the path <code>assets/logo.jpg</code>.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
